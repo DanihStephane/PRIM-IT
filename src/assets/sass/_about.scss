@@ -1,0 +1,105 @@
+
+
+.item-stat-card{
+    content: "";
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+    svg{
+        padding: 10px;
+        border: 2px #b868ff solid;
+        border-radius: 100%;
+        stroke: var(--color-text-secondary);
+    }
+    .fill-secondary{
+        svg{
+            fill: var(--color-text-secondary);
+        }
+    }
+    .fill-primary{
+        svg{
+            border-color: #0095e6;
+          fill: var(--color-text-secondary);
+        }
+
+    }
+    
+}
+.list-item-stat{
+    display:flex;
+    gap: 15px;
+    flex-direction:column;
+    p{
+        margin-bottom:10px;
+            text-align: left;
+    }
+    .w-80{
+        width:90%;
+        .transition{
+            max-width:100%;
+        }
+    }
+}
+
+.story{
+    .bg-transparent{
+       box-shadow: none !important;
+        border: none;
+    }
+    .floating-card{
+       
+    }
+}
+.about-page{
+    .custome-liste-stat{
+        display: flex;
+        @media (max-width:1280px) {
+            flex-direction: column;
+        }
+         @media (max-width:992px) {
+            margin-top: 1.5rem;
+        }
+        .list-item-stat{
+            flex: 1;
+            gap: 30px;
+            @media (max-width:1280px) {
+                  gap: 15px;
+            }
+            .item-stat-card{
+                gap: 20px;
+                align-items: start;
+                
+            }
+        }
+    }
+    .list-item-stat-custome{
+        padding-left: 2rem;
+        @media (max-width:1280px) {
+            padding-left: 0;
+            margin: 1.5rem 0; 
+        }
+        .transition{
+            background-color: #fff;
+            &:after{
+                top: 0px;
+                content: "";
+                right: -47px;
+                width: 70%;
+                height: 80px;
+                border-radius: 0;
+                border-width: 0 2px 2px;
+                background: unset;
+                border-color: #fff;
+                }
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            padding-bottom: 3px;
+            @media (max-width:1280px) {
+                padding-bottom: 25px;
+            }
+        }
+    }
+}

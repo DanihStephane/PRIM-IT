@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "aboutUs": "About Us",
+    "services": "Services",
+    "solutions": "Solutions",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Innovate. Develop. Thrive.",
+      "subtitle": "Your Partner in AI & Web Solutions",
+      "cta": "Start Your AI Journey"
+    },
+    "whyChoose": {
+      "title": "Why Choose",
+      "items": {
+        "item1": {
+          "title": "Expertise & Innovation",
+          "description": "Deep expertise in cutting-edge AI and web technologies"
+        },
+        "item2": {
+          "title": "Tailored Solutions",
+          "description": "Custom solutions designed for your unique business needs"
+        },
+        "item3": {
+          "title": "Proven Track Record",
+          "description": "Successfully delivered 500+ projects worldwide"
+        },
+        "item4": {
+          "title": "Continuous Support",
+          "description": "24/7 support and ongoing maintenance for your peace of mind"
+        }
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "step1": "Discovery & Planning",
+      "step2": "Design & Development",
+      "step3": "Launch & Support"
+    },
+    "form": {
+      "title": "Start Your AI Journey",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "service": "Service",
+      "message": "Message",
+      "submit": "Start Your AI Journey"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Solutions for a Digital Future",
+      "subtitle": "Innovate. Develop. Thrive."
+    },
+    "webDev": {
+      "title": "Web Development & Design",
+      "items": {
+        "item1": "Responsive Interfaces",
+        "item2": "Authentic Brand Design",
+        "item3": "Modern Web Applications"
+      }
+    },
+    "aiSolutions": {
+      "title": "Artificial Intelligence Solutions",
+      "items": {
+        "item1": "Intelligent Systems",
+        "item2": "Golden Well/OpenAI",
+        "item3": "Modern AI Integrations"
+      }
+    },
+    "digitalTransform": {
+      "title": "Digital Transformation",
+      "items": {
+        "item1": "Cloud Services",
+        "item2": "Cybersecurity"
+      }
+    },
+    "support": {
+      "title": "Ongoing Support & Evolution",
+      "items": {
+        "item1": "Maintenance Updates",
+        "item2": "UI Scalable & Future-Proof"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Shaping the Future, Together",
+      "subtitle": "Our Journey in Web Solutions"
+    },
+    "drivenByPurpose": {
+      "title": "Driven by Purpose",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum arcu dolor, non tempus orci maximus at. Donec scelerisque orci efficitur dapibus suscipit. Vivamus posuere dui in dictum tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    },
+    "ourStory": {
+      "title": "Our Story",
+      "text": "Since our beginnings, we've been focused on providing innovative solutions that help our clients achieve their digital transformation goals."
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "text": "To empower businesses with cutting-edge technology solutions"
+    },
+    "values": {
+      "title": "Mission & Values",
+      "text": "Innovation, Excellence, and Client Success"
+    },
+    "stats": {
+      "experience": "200+ Years Experience",
+      "projects": "500+ Complete Projects"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's Build Something Great Together"
+    },
+    "form": {
+      "title": "Our Solutied Something Treant",
+      "fullName": "Full Name",
+      "fullEmail": "Full Email",
+      "email": "Email",
+      "phoneAddress": "Phone Address",
+      "company": "Company Organization",
+      "reason": "Reason of Interest",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Want Bathe Polewem",
+      "email": {
+        "label": "Email",
+        "value": "contact@primicesintelligence.com"
+      },
+      "servicer": {
+        "label": "Servicer",
+        "value": "Our Service Department"
+      },
+      "office": {
+        "label": "Office",
+        "value": "123 AI Boulevard, Tech City, TC 12345"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Primices Intelligence. All rights reserved."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "aboutUs": "À Propos",
+    "services": "Services",
+    "solutions": "Solutions",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Innover. Développer. Prospérer.",
+      "subtitle": "Votre Partenaire en Solutions IA & Web",
+      "cta": "Commencez Votre Voyage IA"
+    },
+    "whyChoose": {
+      "title": "Pourquoi Nous Choisir",
+      "items": {
+        "item1": {
+          "title": "Expertise & Innovation",
+          "description": "Expertise approfondie en IA et technologies web de pointe"
+        },
+        "item2": {
+          "title": "Solutions Sur Mesure",
+          "description": "Solutions personnalisées conçues pour vos besoins uniques"
+        },
+        "item3": {
+          "title": "Résultats Prouvés",
+          "description": "Plus de 500 projets livrés avec succès dans le monde"
+        },
+        "item4": {
+          "title": "Support Continu",
+          "description": "Support 24/7 et maintenance continue pour votre tranquillité"
+        }
+      }
+    },
+    "process": {
+      "title": "Notre Processus",
+      "step1": "Découverte & Planification",
+      "step2": "Conception & Développement",
+      "step3": "Lancement & Support"
+    },
+    "form": {
+      "title": "Commencez Votre Voyage IA",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "service": "Service",
+      "message": "Message",
+      "submit": "Commencer Votre Voyage IA"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Nos Solutions pour un Avenir Numérique",
+      "subtitle": "Innover. Développer. Prospérer."
+    },
+    "webDev": {
+      "title": "Développement & Design Web",
+      "items": {
+        "item1": "Interfaces Responsives",
+        "item2": "Design de Marque Authentique",
+        "item3": "Applications Web Modernes"
+      }
+    },
+    "aiSolutions": {
+      "title": "Solutions d'Intelligence Artificielle",
+      "items": {
+        "item1": "Systèmes Intelligents",
+        "item2": "Golden Well/OpenAI",
+        "item3": "Intégrations IA Modernes"
+      }
+    },
+    "digitalTransform": {
+      "title": "Transformation Numérique",
+      "items": {
+        "item1": "Services Cloud",
+        "item2": "Cybersécurité"
+      }
+    },
+    "support": {
+      "title": "Support & Évolution Continue",
+      "items": {
+        "item1": "Mises à Jour de Maintenance",
+        "item2": "IU Évolutive & Pérenne"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Façonner l'Avenir, Ensemble",
+      "subtitle": "Notre Parcours dans les Solutions Web"
+    },
+    "drivenByPurpose": {
+      "title": "Guidés par un Objectif",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum arcu dolor, non tempus orci maximus at. Donec scelerisque orci efficitur dapibus suscipit. Vivamus posuere dui in dictum tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    },
+    "ourStory": {
+      "title": "Notre Histoire",
+      "text": "Depuis nos débuts, nous nous concentrons sur la fourniture de solutions innovantes qui aident nos clients à atteindre leurs objectifs de transformation numérique."
+    },
+    "ourMission": {
+      "title": "Notre Mission",
+      "text": "Autonomiser les entreprises avec des solutions technologiques de pointe"
+    },
+    "values": {
+      "title": "Mission & Valeurs",
+      "text": "Innovation, Excellence et Réussite Client"
+    },
+    "stats": {
+      "experience": "200+ Années d'Expérience",
+      "projects": "500+ Projets Réalisés"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Construisons Quelque Chose de Grand Ensemble"
+    },
+    "form": {
+      "title": "Notre Solutied Quelque Treant",
+      "fullName": "Nom Complet",
+      "fullEmail": "Email Complet",
+      "email": "Email",
+      "phoneAddress": "Adresse Téléphonique",
+      "company": "Organisation/Entreprise",
+      "reason": "Raison de l'Intérêt",
+      "message": "Votre Message",
+      "submit": "Envoyer le Message"
+    },
+    "info": {
+      "title": "Contactez-Nous",
+      "email": {
+        "label": "Email",
+        "value": "contact@primicesintelligence.com"
+      },
+      "servicer": {
+        "label": "Service",
+        "value": "Notre Département de Service"
+      },
+      "office": {
+        "label": "Bureau",
+        "value": "123 Boulevard IA, Tech City, TC 12345"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Primices Intelligence. Tous droits réservés."
+  }
+}

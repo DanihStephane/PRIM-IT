@@ -1,0 +1,55 @@
+.border-2-primary{
+    border-width: 3px!important;
+    border-style: solid!important;
+    border-color: #33aae2!important;
+    border-radius: 25px!important;
+}
+.border-left-primary{
+   border-left: 3px solid #33aae2; 
+}
+.border-2-primary-lineaire{
+     border-radius: 25px!important;
+    background: linear-gradient(var(--color-background-light), var(--color-background-light)) padding-box, linear-gradient(135deg, #33aae2, var(--color-text-accent)) border-box!important;
+    border: 3px solid transparent!important;
+}
+
+.info-card-adress{
+    .info-icon{
+        border-radius: 100%;
+        background-color: unset;
+        border: 1px #33aae2 solid;
+    }
+    .map{
+        max-width: 200px;
+        width: 100%;
+
+    }
+}
+.contact-page{
+    .clone-border-content{
+        min-height: 120px;
+        position: relative;
+            margin-bottom: 25px;
+            @media (max-width:992px) {
+                display: none;
+            }
+         .border-content{
+            z-index: 2;
+            position: absolute;
+            width: 100%;
+            height: 315px;
+            top: -200px;
+        }
+    }
+    .sociaux{
+        position: absolute;
+        top: -160px;
+        right: 0;
+        .btn-social{
+            font-weight: bold;
+            border: none;
+            background-color: transparent;
+        }
+    }
+   
+}

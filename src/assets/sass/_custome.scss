@@ -1,0 +1,54 @@
+// Place tes règles spécifiques ou overrides Tailwind ici.
+
+$shadow-soft: 0 16px 32px rgba(102, 190, 239, 0.18);
+
+@mixin glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 1.25rem;
+  box-shadow: $shadow-soft;
+  backdrop-filter: blur(14px);
+}
+
+.glass-card {
+  @include glass-card;
+}
+.py-10{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.lg-deco{
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  background: url(../images/lg.png) no-repeat;
+  background-size: contain;
+  top: 50%;
+  width: 32%;
+  @media (max-width:1200px) {
+    display: none;
+  }
+}
+.btn{
+  border-radius: 10px;
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1200px;
+    }
+}
+h2{
+  margin-bottom: 25px;
+  @media (max-width:798px) {
+    margin-bottom: 15px;
+  }
+}
+.border-default{
+  border: 2px #fff solid;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.shadow-none{
+  box-shadow: none!important;
+}

@@ -1,0 +1,172 @@
+.deco-l{
+    position: relative;
+    &:before{
+        content: "";
+        background: url('../images/deco-l.png') no-repeat top left; 
+        position: absolute;
+        top: -20px;
+        left: -10%;
+        display: block;
+        width: 63px;
+        height: 320px;
+        background-size: contain;
+        z-index: 1;
+        @media (max-width:1320px) {
+        left: -7%;
+        }
+        @media (max-width:1280px) {
+        display: none;
+        }
+    }
+    &.deco-ligne{
+        &:before{
+            content: "";
+            background: url('../images/deco-ligne.png') no-repeat top left; 
+            left: -18px;
+            top: -79px;
+        }
+    }
+}
+.deco-r{
+    position: relative;
+    &:after{
+        content: "";
+        background: url('../images/deco-r.png') no-repeat top left; 
+        position: absolute;
+        top: -20%;
+        right: -5%;
+        display: block;
+        width: 63px;
+        height: 320px;
+        background-size: contain;
+        z-index: 1;
+        @media (max-width:1320px) {
+        right: -7%;
+        }
+        @media (max-width:1280px) {
+        display: none;
+        }
+    }
+}
+.deco-b-l{
+    position: relative;
+    &:after{
+        content: "";
+        background: url('../images/deco-b-l.png') no-repeat top left; 
+        position: absolute;
+        top: -90px;
+        left: -3%;
+        display: block;
+        width: 63px;
+        height: 120px;
+        background-size: contain;
+        z-index: 1;
+        @media (max-width:1320px) {
+        left: -7%;
+        }
+        @media (max-width:1280px) {
+        display: none;
+        }
+    }
+}
+
+.bg-deco{
+    position: relative;
+    &.top-left{
+        background: url('../images/deco-top-left.png') no-repeat;
+        background-size: 320px 330px;
+        background-position: 0 -20px;
+        &:after{
+            content: "";
+            background: url('../images/deco-top-right.png') no-repeat top left; 
+            position: absolute;
+            bottom: 0;
+            right: 6%;
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            @media (max-width:1280px) {
+            display: none;
+            }
+        }
+    }
+    &.top-left-2{
+        background: url('../images/deco-top-left2.png') no-repeat;
+        background-size: 280px;
+        background-position: 6% 0%;
+        &.deco-top-left2-none{
+            background-image: none;
+        }
+         &:after{
+            content: "";
+            background: url('../images/deco-bottom-right.png') no-repeat top left; 
+            position: absolute;
+            bottom: 0;
+            right: 0%;
+            display: block;
+            width: 350px;
+            height: 350px;
+            background-size: contain;
+            z-index: 1;
+            @media (max-width:1024px) {
+            display: none;
+            }
+        }
+    }
+    &.center-r{
+        position: relative;
+        &:after{
+            content: "";
+            background: url('../images/deco-center-right.png') no-repeat top left; 
+            position: absolute;
+            top: -244px;
+            right: -7%;
+            display: block;
+            width: 89px;
+            height: 360px;
+            background-size: contain;
+            z-index: 1;
+            @media (max-width:1320px) {
+                right: -5%;
+                width: 65px;
+                bottom: 10%;
+            }
+            @media (max-width:1280px) {
+                display: none;
+            }
+        }
+        &.deco-blue{
+            &::after{
+                 content: "";
+            background: url('../images/deco-center-right-blue.png') no-repeat top left;
+            }
+        }
+    }
+    &.deco-r-bottom{
+        &:after{
+            content: "";
+            background: url('../images/deco-r-bottom.png') no-repeat top left; 
+            position: absolute;
+            bottom: -65%;
+            right: -7%;
+            display: block;
+            width: 63px;
+            height: 320px;
+            background-size: contain;
+            z-index: 3;
+            @media (max-width:1320px) {
+            right: -7%;
+            }
+            @media (max-width:1280px) {
+            display: none;
+            }
+        }
+    }
+    
+}
+
+.bg-team{
+    background: url(../images/bg-team.png) no-repeat center center;
+    background-size: contain;
+}

@@ -1,0 +1,50 @@
+.formulaire{
+    &.section-padding{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .content{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+        .img{
+            max-width: 60%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+             @media (max-width:768px) {
+                display: none;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .form{
+            width: 40%;
+            display: flex;
+            align-items: center;
+             @media (max-width:768px) {
+                width: 100%;
+            }
+            .contact-form{
+                padding: 0;
+                background-color: unset;
+                box-shadow: none;
+            }
+        }
+    }
+    .form-control{
+        border: none!important;
+            border-radius: 8px !important;
+    }
+}
+.border-content{
+    border: 2px #fff solid;
+    box-shadow: 1px 1px 20px #fff inset, 1px 1px 20px #fff;
+    border-radius: 10px;
+    padding: 16px !important;
+    margin-top: 1rem;
+}
