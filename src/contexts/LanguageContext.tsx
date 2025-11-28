@@ -23,13 +23,13 @@ const translations: Translations = {
   'nav.contact': { fr: 'Contact', en: 'Contact' },
 
   // Home Page
-  'home.hero.title': { fr: 'Innover. Développer. Prospérer.', en: 'Innovate. Develop. Thrive.' },
-  'home.hero.subtitle': { fr: 'Votre Partenaire en Solutions IA & Web', en: 'Your Partner in AI & Web Solutions' },
-  'home.hero.cta': { fr: 'Explorer Nos Services', en: 'Explore Our Services' },
+  'home.hero.title': { fr: 'Transformez Votre Vision en Réalité Digitale', en: 'Transform Your Vision into Digital Reality' },
+  'home.hero.subtitle': { fr: 'Nous concevons des solutions web et IA intelligentes, sécurisées et ultra-rapides qui propulsent votre entreprise vers l\'avenir. De l\'idée à la mise en production, nous créons l\'innovation qui fait la différence.', en: 'We design intelligent, secure, and lightning-fast web and AI solutions that propel your business into the future. From concept to deployment, we create the innovation that makes the difference.' },
+  'home.hero.cta': { fr: 'Démarrer Votre Projet', en: 'Start Your Project' },
   'home.whyChoose': { fr: 'Pourquoi Choisir', en: 'Why Choose' },
-  'home.whyPriceless': { fr: 'Pourquoi Précieux', en: 'Why Priceless' },
-  'home.destleeIllitsei': { fr: 'Destlee Illitsei', en: 'Destlee Illitsei' },
-  'home.testReimmai': { fr: 'Test Reimmai', en: 'Test Reimmai' },
+  'home.expertise': { fr: 'Expertise Technique', en: 'Technical Expertise' },
+  'home.innovation': { fr: 'Innovation Continue', en: 'Continuous Innovation' },
+  'home.support': { fr: 'Support Dédié', en: 'Dedicated Support' },
   'home.process': { fr: 'Notre Processus', en: 'Our Process' },
   'home.discover': { fr: 'Découvrir & Analyser', en: 'Discover & Analyze' },
   'home.design': { fr: 'Concevoir & Développer', en: 'Design & Develop' },
@@ -49,7 +49,7 @@ const translations: Translations = {
   'about.mission': { fr: 'Notre Mission', en: 'Our Mission' },
   'about.values': { fr: 'Mission & Valeurs', en: 'Mission & Values' },
 
-  // Services/Solutions Page
+  // Services Page
   'services.hero.title': { fr: 'Nos Solutions pour un Avenir Numérique', en: 'Our Solutions for a Digital Future' },
   'services.hero.subtitle': { fr: 'Innover. Développer. Prospérer.', en: 'Innovate. Develop. Thrive.' },
   'services.hero.cta': { fr: 'Contacter Notre Équipe', en: 'Contact Our Team' },
@@ -57,6 +57,14 @@ const translations: Translations = {
   'services.aiSolutions': { fr: 'Solutions d\'Intelligence Artificielle', en: 'Artificial Intelligence Solutions' },
   'services.digitalTransformation': { fr: 'Transformation Numérique', en: 'Digital Transformation' },
   'services.ongoingSupport': { fr: 'Support Continu & Évolution', en: 'Ongoing Support & Evolution' },
+
+  // Solutions Page
+  'solutions.ecommerce': { fr: 'Solutions E-commerce', en: 'E-commerce Solutions' },
+  'solutions.saas': { fr: 'Plateformes SaaS', en: 'SaaS Platforms' },
+  'solutions.chatbot': { fr: 'Chatbots Intelligents', en: 'Intelligent Chatbots' },
+  'solutions.analytics': { fr: 'Analyse de Données & BI', en: 'Data Analytics & BI' },
+  'solutions.erp': { fr: 'Systèmes de Gestion ERP', en: 'ERP Management Systems' },
+  'solutions.aiCustom': { fr: 'IA Sur Mesure', en: 'Custom AI Solutions' },
 
   // Contact Page
   'contact.hero.title': { fr: 'Construisons Quelque Chose de Formidable Ensemble', en: 'Let\'s Build Something Great Together' },

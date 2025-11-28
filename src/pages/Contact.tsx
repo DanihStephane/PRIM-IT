@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
 
             <div className="col-lg-5">
               <div className="d-flex flex-column gap-4 border-2-primary shadow-none p-3">
-                <h3 className="h6 fw-semibold text-theme-primary mb-4">Want Batne Potorem</h3>
+                <h3 className="h6 fw-semibold text-theme-primary mb-4">Informations de Contact</h3>
                 <AnimatedSection animation="fadeInRight" delay={200}>
                   <div className="info-card bg-transparent border-0 info-card-adress p-0 m-0">
                     
@@ -141,13 +141,13 @@ const Contact: React.FC = () => {
                           <div className="info-icon">
                             <GrServices size={20} />
                           </div>
-                           <h4 className="fw-semibold text-theme-primary mb-1">Servicer</h4>
+                           <h4 className="fw-semibold text-theme-primary mb-1">Services</h4>
                         </div>
                          <div className='desc'>
                             <p className="text-theme-secondary small mb-0">
-                              D'omiliens Haux Qilive
+                              Développement Web & IA
                               <br />
-                              Gity Al 6790
+                              Disponible 24/7
                             </p>
                           </div>
                       </div>

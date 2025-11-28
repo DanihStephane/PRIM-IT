@@ -52,17 +52,17 @@
     position: relative;
     &:after{
         content: "";
-        background: url('../images/deco-b-l.png') no-repeat top left; 
+        background: url('../../../assets/bas à gauche.svg') no-repeat top left;
         position: absolute;
-        top: -90px;
-        left: -3%;
+        top: -180px;
+        left: -15%;
         display: block;
-        width: 63px;
-        height: 120px;
+        width: 300px;
+        height: 300px;
         background-size: contain;
         z-index: 1;
         @media (max-width:1320px) {
-        left: -7%;
+        left: -18%;
         }
         @media (max-width:1280px) {
         display: none;
@@ -73,12 +73,12 @@
 .bg-deco{
     position: relative;
     &.top-left{
-        background: url('../images/deco-top-left.png') no-repeat;
+        background: url('../../../assets/en haut à gauche.svg') no-repeat;
         background-size: 320px 330px;
         background-position: 0 -20px;
         &:after{
             content: "";
-            background: url('../images/deco-top-right.png') no-repeat top left; 
+            background: url('../../../assets/en haut à droite.svg') no-repeat top left;
             position: absolute;
             bottom: 0;
             right: 6%;
@@ -92,7 +92,7 @@
         }
     }
     &.top-left-2{
-        background: url('../images/deco-top-left2.png') no-repeat;
+        background: url('../../../assets/en haut à gauche.svg') no-repeat;
         background-size: 280px;
         background-position: 6% 0%;
         &.deco-top-left2-none{
@@ -100,7 +100,7 @@
         }
          &:after{
             content: "";
-            background: url('../images/deco-bottom-right.png') no-repeat top left; 
+            background: url('../../../assets/bas à droite.svg') no-repeat top left;
             position: absolute;
             bottom: 0;
             right: 0%;

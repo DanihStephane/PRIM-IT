@@ -13,8 +13,8 @@ const Services: React.FC = () => {
       icon: <Settings size={24} />,
       features: ['Storybrand Wireframe', 'Authentic Brand Design', 'Modern Web Applications'],
       descriptions: [
-        'Develop ux from stakehave forensic places.',
-        'Actionum ex leur French desixisantri demand places.'
+        'Conception d\'interfaces utilisateur intuitives et modernes pour une expérience optimale.',
+        'Développement d\'applications web performantes avec les dernières technologies (React, Node.js, etc.).'
       ],
       gradient: 'linear-gradient(135deg, #66BEEF, #BCC2F3)'
     },
@@ -23,29 +23,29 @@ const Services: React.FC = () => {
       icon: <Fingerprint size={24} />,
       features: ['Intelligent Systems', 'Seamless AI', 'Modern Manufacturing'],
       descriptions: [
-        'Lorem ipsum dolor consectetur ui od non consecutive adipiscing dolor.',
-        'Lorem ipsum dolor consectetur amet et adipiscing lorem-meri esso augal.'
+        'Intégration de solutions d\'intelligence artificielle pour automatiser vos processus métier.',
+        'Développement de modèles de machine learning personnalisés pour vos besoins spécifiques.'
       ],
       gradient: 'linear-gradient(135deg, #BCC2F3, #9AA5F5)'
     },
     {
-      title: 'Artificial Intelligence Solutions',
+      title: 'Traitement du Langage Naturel',
       icon: <Cpu size={24} />,
-      features: ['Storyboards Develop', 'Mopenmented Develop'],
+      features: ['Chatbots Intelligents', 'Analyse de Sentiments'],
       descriptions: [
-        'Crastro Ippsum dolor consectetur time most talis at lorem & claris achvoltaique ligendvogue.',
-        'Exeum ipsums doloris reactivions ranvoci sus als sunt quia inciduut dolor strent fanpourbisue.'
+        'Création de chatbots conversationnels capables de comprendre et répondre naturellement aux utilisateurs.',
+        'Analyse automatique de textes et extraction d\'informations clés pour votre business.'
       ],
       gradient: 'linear-gradient(135deg, #9AA5F5, #66BEEF)'
     },
     {
-      title: 'Digital Transformation',
+      title: 'Analyse de Données & BI',
       subtitle: 'Data Analytics & Machine Learning',
       icon: <BarChart3 size={24} />,
       features: ['Cloud Services', 'Cybersecurity'],
       descriptions: [
-        'Tersin ipsim dolor staurareseret sed adolceate derat posseste ai processe.',
-        'Lorem ipsum doloris armoaatam tal vict debastur ai paceat loreanent procat.'
+        'Tableaux de bord interactifs et analyses prédictives pour faciliter vos prises de décisions.',
+        'Transformation de vos données brutes en insights actionnables grâce au machine learning.'
       ],
       gradient: 'linear-gradient(135deg, #66BEEF, #BCC2F3)'
     },
@@ -54,8 +54,8 @@ const Services: React.FC = () => {
       icon: <Shield size={24} />,
       features: ['Cloud Services', 'Cybersecurity'],
       descriptions: [
-        'Tefam ipsam dolor Stratewsa thrend ineasyetaysprem pollaritasom ad molesteres.',
-        'Exeum ipsums doloris einmariqa ipsm solvevmement.'
+        'Accompagnement dans votre transformation digitale avec des solutions cloud sécurisées et évolutives.',
+        'Migration vers le cloud et modernisation de votre infrastructure informatique existante.'
       ],
       gradient: 'linear-gradient(135deg, #BCC2F3, #8DB7F9)'
     },
@@ -64,8 +64,8 @@ const Services: React.FC = () => {
       icon: <Cloud size={24} />,
       features: ['Maintenance Updates', 'Scalability & Future-Proofing'],
       descriptions: [
-        'Lorem ipsum dolor eu medam post nidnecessitaussa wezt femoumsssens.',
-        'Lorem ipsm dulors at matteur vemt lemnaestment.'
+        'Support technique continu et mises à jour régulières pour garantir la sécurité et la performance.',
+        'Solutions évolutives conçues pour s\'adapter à la croissance de votre entreprise.'
       ],
       gradient: 'linear-gradient(135deg, #8DB7F9, #66BEEF)'
     }

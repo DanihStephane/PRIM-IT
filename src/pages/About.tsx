@@ -12,10 +12,10 @@ const About: React.FC = () => {
   const { t } = useLanguage();
 
   const teamMembers = [
-    { name: 'Alex Chen', role: 'Founder & Littress', avatar: 'https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' },
-    { name: 'Alex Chen', role: 'Architect & CSO', avatar: 'https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' },
-    { name: 'Rinterttiry', role: 'Graphiqu Addittresse', avatar: 'https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' },
-    { name: 'Meet Incestline', role: 'Proulane & Iconiais', avatar: 'https://images.pexels.com/photos/4307678/pexels-photo-4307678.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' }
+    { name: 'Sarah Martin', role: 'CEO & Fondatrice', avatar: 'https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' },
+    { name: 'Marc Dubois', role: 'CTO & Architecte', avatar: 'https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' },
+    { name: 'Julie Renard', role: 'Designer UI/UX', avatar: 'https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' },
+    { name: 'Thomas Leroy', role: 'Lead Developer IA', avatar: 'https://images.pexels.com/photos/4307678/pexels-photo-4307678.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2' }
   ];
 
   return (
@@ -28,10 +28,10 @@ const About: React.FC = () => {
               <AnimatedSection animation="fadeInLeft" className='border-default'>
                 <h2 className="fw-bold text-theme-primary mb-3">{t('about.drivenByPurpose')}</h2>
                 <p className="text-theme-secondary">
-                  Lorem ipsum dolor semuiraus tonnati puis clamsteadn tailsraimeu liberarepito advenit tacenter
-                  praesideat adieaent tus variat adipiat et eum veris nostrud rapid neque non irure lorem. Nam fhsaet
-                  cklosae duliquid esse et lu lis au novend af consequaeur venent, sunt in culpa qui oflicta dessent
-                  solerrunt rai ali saepeatunt accussnt.
+                  Chez Primices Intelligence, nous croyons que la technologie doit être au service de l'humain.
+                  Notre mission est d'accompagner les entreprises dans leur transformation digitale en créant des solutions
+                  web et IA innovantes, performantes et adaptées à leurs besoins réels. Nous combinons expertise technique,
+                  créativité et engagement pour livrer des projets qui font la différence.
                 </p>
               </AnimatedSection>
             </div>
@@ -40,7 +40,7 @@ const About: React.FC = () => {
                 <AnimatedSection animation="fadeInRight" delay={150} className="list-item-stat">
                   <div className="item-stat-card h-100 text-center">
                     <div className="text-theme-primary w-80">
-                      <p>2019 <small>Founder Delivery</small></p>
+                      <p>2019 <small>Création de l'agence</small></p>
                        <span className="transition"></span>
                     </div>
                     <div className="fill-secondary">
@@ -50,7 +50,7 @@ const About: React.FC = () => {
                   </div>
                   <div className="item-stat-card h-100 text-center">
                     <div className="text-theme-primary w-80">
-                      <p>2020 <small>Laurel & Delmore</small></p>
+                      <p>2020 <small>Premiers projets IA</small></p>
                       <span className="transition"></span>
                     </div>
                     <div>
@@ -61,7 +61,7 @@ const About: React.FC = () => {
               <AnimatedSection animation="fadeInRight" delay={300} className=" list-item-stat list-item-stat-custome">
                   <div className="item-stat-card h-100 text-center">
                       <div className="text-theme-primary w-80">
-                        <p>Lorem ipsum dolor amet consectetur</p>
+                        <p>2023 <small>Expansion internationale</small></p>
                         <span className="transition"></span>
                       </div>
                       <div className="fill-primary -bm-2">
@@ -84,9 +84,10 @@ const About: React.FC = () => {
                 <FloatingCard className='bg-transparent'>
                   <h3 className="h5 fw-semibold text-theme-primary mb-3">{t('about.story')}</h3>
                   <p className="text-theme-secondary small mb-0">
-                    Lorem ipsum dolor sed amris tonnari puis desicarnin takuimeu tharproprio adhersiv tacente pressi de
-                    elolat adgissat tur sagitas adipait et liu benis nostrud raped neque non irure lorem. Ob theamet
-                    perent dai lis-acam in voluptat ostrud raped neque qui magnitud.
+                    Fondée en 2019, Primices Intelligence est née de la volonté de démocratiser l'accès aux technologies
+                    de pointe. Nous avons débuté avec une petite équipe passionnée et un objectif clair : créer des solutions
+                    digitales qui transforment réellement les entreprises. Aujourd'hui, nous accompagnons des dizaines de
+                    clients dans leurs projets web et IA, avec toujours la même exigence de qualité et d'innovation.
                   </p>
                 </FloatingCard>
               </AnimatedSection>
@@ -100,7 +101,8 @@ const About: React.FC = () => {
                   </div>
                  
                   <p className="text-theme-secondary small mb-0">
-                    Doreso by stevensison et marginsitheonow marginality enhanced technoletiges.
+                    Démocratiser l'accès aux technologies innovantes en créant des solutions sur mesure,
+                    performantes et évolutives pour nos clients.
                   </p>
                 </FloatingCard>
               </AnimatedSection>
@@ -114,7 +116,7 @@ const About: React.FC = () => {
                   </div>
                  
                   <p className="text-theme-secondary small mb-0">
-                    AI client ruissou et advenant liberti-clian-concretisens Desso ai lumerai.
+                    Excellence, innovation, transparence et engagement envers la réussite de chaque projet client.
                   </p>
                 </FloatingCard>
               </AnimatedSection>

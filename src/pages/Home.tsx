@@ -10,7 +10,7 @@ import { TbCloudUpload } from "react-icons/tb";
 import { PiCodeBold } from "react-icons/pi";
 import Avatar1  from "../assets/images/pm.jpg";
 import Avatar2 from "../assets/images/pf.jpg";
-import ImgTech from "../assets/images/tech0.png";
+import ImgTech from "../../assets/img before footer.svg";
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
                   </div>
                  
                   <p className="text-theme-secondary small mb-0">
-                    Vision webcam au lieu un advanced portent impares.
+                    Des solutions personnalisées qui répondent précisément à vos besoins métier.
                   </p>
                 </FloatingCard>
               </AnimatedSection>
@@ -55,13 +55,13 @@ const Home: React.FC = () => {
             <div className="col-sm-6 col-lg-3 item">
               <AnimatedSection animation="fadeInUp" delay={150} className="h-100">
                 <FloatingCard className="h-100">
-                   <h3 className="h6 fw-semibold text-theme-primary mb-2">{t('home.whyPriceless')}</h3>
+                   <h3 className="h6 fw-semibold text-theme-primary mb-2">{t('home.expertise')}</h3>
                   <div className="feature-icon feature-icon-alt mb-3">
                     <Settings size={22} />
                   </div>
-                  
+
                   <p className="text-theme-secondary small mb-0">
-                    AI omnibus & fonctions, al specialise ai presis.
+                    Une équipe de développeurs expérimentés maîtrisant les dernières technologies web et IA.
                   </p>
                 </FloatingCard>
               </AnimatedSection>
@@ -70,13 +70,13 @@ const Home: React.FC = () => {
             <div className="col-sm-6 col-lg-3 item">
               <AnimatedSection animation="fadeInUp" delay={300} className="h-100">
                 <FloatingCard className="h-100">
-                  <h3 className="h6 fw-semibold text-theme-primary mb-2">{t('home.destleeIllitsei')}</h3>
+                  <h3 className="h6 fw-semibold text-theme-primary mb-2">{t('home.innovation')}</h3>
                   <div className="feature-icon feature-icon-accent mb-3">
                     <Cpu size={22} />
                   </div>
-                  
+
                   <p className="text-theme-secondary small mb-0">
-                    EI Immer attract ai obetrinet locvati.
+                    Intégration des technologies IA les plus avancées pour automatiser vos processus.
                   </p>
                 </FloatingCard>
               </AnimatedSection>
@@ -85,12 +85,12 @@ const Home: React.FC = () => {
             <div className="col-sm-6 col-lg-3 item">
               <AnimatedSection animation="fadeInUp" delay={450} className="h-100">
                 <FloatingCard className="h-100">
-                   <h3 className="h6 fw-semibold text-theme-primary mb-2">{t('home.testReimmai')}</h3>
+                   <h3 className="h6 fw-semibold text-theme-primary mb-2">{t('home.support')}</h3>
                   <div className="feature-icon mb-3">
                     <Fingerprint size={22} />
                   </div>
                   <p className="text-theme-secondary small mb-0">
-                    Vision livrent sociétal ai tut tympanum italia keri tenaissant.
+                    Accompagnement continu et maintenance pour garantir la pérennité de vos solutions.
                   </p>
                 </FloatingCard>
               </AnimatedSection>
@@ -141,9 +141,9 @@ const Home: React.FC = () => {
                         </div>
                         <div className='desc'>
                           <p className="text-theme-secondary small mb-2">
-                            Lorem ipsum at characteristicnise spoertedenuis steers tempate talar adipiscende.
+                            Une équipe professionnelle et réactive qui a su transformer notre vision en réalité. Leur expertise en IA a considérablement amélioré nos processus métier.
                           </p>
-                          <span className="small fw-semibold text-theme-primary">Client Review</span>
+                          <span className="small fw-semibold text-theme-primary">Témoignage Client</span>
                         </div>
                       </div>
                   </AnimatedSection>
@@ -154,9 +154,9 @@ const Home: React.FC = () => {
                         </div>
                         <div className='desc'>
                           <p className="text-theme-secondary small mb-2">
-                            Lorem ipsum at characteristicnise spoertedenuis steers tempate talar adipiscende.
+                            Des solutions web modernes et performantes qui ont dépassé nos attentes. Un partenaire de confiance pour notre transformation digitale.
                           </p>
-                          <span className="small fw-semibold text-theme-primary">Client Review</span>
+                          <span className="small fw-semibold text-theme-primary">Témoignage Client</span>
                         </div>
                       </div>
                     </AnimatedSection>
