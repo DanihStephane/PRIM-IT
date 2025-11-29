@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Settings, Cpu, Fingerprint } from 'lucide-react';
+import { Settings, Cpu, Fingerprint, Lock, LayoutDashboard, FileText } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
 import AnimatedButton from '../components/AnimatedButton';
@@ -11,6 +11,7 @@ import { PiCodeBold } from "react-icons/pi";
 import Avatar1  from "../assets/images/pm.jpg";
 import Avatar2 from "../assets/images/pf.jpg";
 import ImgTech from "../../assets/img before footer.svg";
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -163,6 +164,51 @@ const Home: React.FC = () => {
                  
               </div>
           </div>
+        </div>
+      </section>
+
+      {/* Section Espace Client CTA */}
+      <section className="section-padding client-cta-section">
+        <div className="container">
+          <AnimatedSection animation="fadeInUp">
+            <div className="client-cta-card glass-card p-5 text-center">
+              <div className="row align-items-center g-4">
+                <div className="col-lg-8 text-lg-start">
+                  <div className="d-flex align-items-center gap-3 mb-3 justify-content-center justify-content-lg-start">
+                    <div className="cta-icon">
+                      <Lock size={28} />
+                    </div>
+                    <h2 className="h3 fw-bold text-theme-primary mb-0">
+                      Déjà client ? Accédez à votre espace
+                    </h2>
+                  </div>
+                  <p className="text-theme-secondary mb-3 mb-lg-0">
+                    Suivez l'avancement de vos projets en temps réel, accédez à vos documents et communiquez avec votre équipe dédiée.
+                  </p>
+                  <div className="d-flex gap-3 mt-3 justify-content-center justify-content-lg-start flex-wrap">
+                    <div className="d-flex align-items-center gap-2 text-theme-secondary small">
+                      <LayoutDashboard size={18} className="text-brand" />
+                      <span>Dashboard personnalisé</span>
+                    </div>
+                    <div className="d-flex align-items-center gap-2 text-theme-secondary small">
+                      <FileText size={18} className="text-brand" />
+                      <span>Tous vos documents</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4">
+                  <div className="d-flex flex-column gap-3">
+                    <Link to="/client/login" className="btn btn-brand btn-lg w-100">
+                      Se connecter
+                    </Link>
+                    <Link to="/client/register" className="btn btn-outline-brand w-100">
+                      Activer mon compte
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

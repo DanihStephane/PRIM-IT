@@ -9,6 +9,9 @@
 @use './contact' as contact;
 @use './services' as services;
 @use './deco' as deco;
+@use './chatbot' as chatbot;
+@use './client' as client;
+@use './admin' as admin;
 
 $brand-primary: #0095e6;
 $brand-secondary: #bcc2f3;
@@ -146,17 +149,41 @@ h1,h2,h3,h4,h5,h6 {
 
 .site-header {
   border-bottom: 1px solid rgba($brand-secondary, 0.4);
-  position: relative;
-  z-index: 10;
-  //position: sticky;
-  //top: 0;
-  //z-index: 1020;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  padding-top: 1rem;
+  transition: padding-top 0.3s ease, box-shadow 0.3s ease;
+
+  &.scrolled {
+    padding-top: 0.5rem;
+    box-shadow: 0 4px 20px rgba($brand-primary, 0.15);
+  }
 
   .navbar {
     padding: 0;
     border-radius: 10px;
     background-color: #dbe2ef;
     border: 2px solid #fff;
+  }
+
+  .client-area-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, $brand-primary, $brand-accent);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba($brand-primary, 0.2);
+
+    &:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 20px rgba($brand-primary, 0.35);
+    }
   }
 
   .navbar-toggler {
@@ -194,6 +221,18 @@ h1,h2,h3,h4,h5,h6 {
 
     &[aria-expanded='true'] .toggler-bar:nth-child(3) {
       transform: translateY(-6px) rotate(-45deg);
+    }
+  }
+
+  .client-area-avatar {
+    @media (max-width: 991.98px) {
+      width: 36px;
+      height: 36px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 

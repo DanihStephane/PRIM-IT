@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Globe } from 'lucide-react';
+import { Globe, User } from 'lucide-react';
 import Logo from '../assets/images/logo.png';
 import { useLanguage } from '../contexts/LanguageContext';
 import AnimatedSection from './AnimatedSection';
@@ -12,6 +12,7 @@ const Header: React.FC = () => {
   const location = useLocation();
   const { language, setLanguage, t } = useLanguage();
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const isActive = (path: string) => location.pathname === path;
   const navigation = [
@@ -25,9 +26,18 @@ const Header: React.FC = () => {
     setMenuOpen(false);
   }, [location.pathname]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-    <header className="site-header border-0 ">
+    <header className={`site-header border-0 ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container position-relative p-0-mobile">
         <span className="lg-deco"></span>
         <div className="col-lg-8 ms-auto w-100-1200">
@@ -101,6 +111,13 @@ const Header: React.FC = () => {
                   </li>
                 </ul>
               </div>
+              <Link
+                to="/client/login"
+                className="client-area-avatar ms-2"
+                title={language === 'fr' ? 'Espace Client' : 'Client Area'}
+              >
+                <User size={20} />
+              </Link>
             </div>
           </div>
         </nav>

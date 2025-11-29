@@ -23,6 +23,7 @@ const Footer: React.FC = () => {
 
           <div className="col-md-8 m-0">
             <nav className="list-menu text-theme-secondary">
+              <Link to="/client/login" className="text-brand fw-semibold">Espace Client</Link>
               <Link to="/" >Mentions légales</Link>
               <Link to="/" >Cookies</Link>
               <Link to="/" >Terms</Link>
