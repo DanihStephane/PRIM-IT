@@ -39,8 +39,7 @@ const Header: React.FC = () => {
     <>
     <header className={`site-header border-0 ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container position-relative p-0-mobile">
-        <span className="lg-deco"></span>
-        <div className="col-lg-8 ms-auto w-100-1200">
+        <div className="w-100-1200">
         <nav className="navbar navbar-expand-lg px-3 py-2 position-relative">
           <Link to="/" className="navbar-brand d-flex align-items-center text-decoration-none">
             <img src={Logo} alt="Primices Intelligence" className="brand-logo img-fluid" />
@@ -63,7 +62,7 @@ const Header: React.FC = () => {
             id="primary-navigation"
             className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}
           >
-            <ul className="navbar-nav ms-lg-auto align-items-lg-center gap-lg-3">
+            <ul className="navbar-nav m-auto align-items-lg-center gap-lg-3">
               {navigation.map(({ path, label }) => (
                 <li className="nav-item" key={path}>
                   <Link
@@ -124,7 +123,7 @@ const Header: React.FC = () => {
         </div>
       </div>
     </header>
-    <section className="section-padding banner pt-0 deco-l deco-r">
+    <section className="section-padding banner pt-0">
         <div className="container">
           <div className="row align-items-center gy-5 flex-revers-mobile">
             <div className="col-lg-7">

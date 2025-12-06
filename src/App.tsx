@@ -40,7 +40,7 @@ function App() {
             <Route path="*" element={
               <div className="min-vh-100 position-relative bg-theme ">
                 <div className="relative z-10">
-                  <div className='bg-deco deco-top top-left py-10 mx-90'>
+                  <div className='mx-90'>
                     <div className="container">
                       <Header />
                     </div>
