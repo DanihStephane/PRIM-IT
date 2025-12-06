@@ -52,3 +52,30 @@ h2{
 .shadow-none{
   box-shadow: none!important;
 }
+.rouded-pill {
+  border-radius: 50rem;
+}
+.bg-rounded-light{
+    background-color: #E4E4E4;
+    border-radius: 25px;
+    padding: 0 15px;
+}
+
+.btn, .btn-brand, .btn-outline-brand, .btn-language{
+  border-radius: 25px;
+}
+.bi-color-fond {
+  display: inline-block;
+  background: linear-gradient(to right, #C2C2C3, #576F9A);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+      font-size: 96px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+     @media (max-width:992px) {
+            font-size: 40px;
+        }
+}

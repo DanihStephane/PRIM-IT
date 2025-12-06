@@ -38,7 +38,7 @@ function App() {
 
             {/* Routes Site Principal */}
             <Route path="*" element={
-              <div className="min-vh-100 position-relative bg-theme ">
+              <div className="min-vh-100 position-relative">
                 <div className="relative z-10">
                   <div className='mx-90'>
                     <div className="container">
