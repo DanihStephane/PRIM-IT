@@ -133,7 +133,7 @@ const Header: React.FC = () => {
         </div>
       </div>
     </header>
-    <section className="section-padding banner pt-0">
+    <section className="section-padding banner pt-0 deco-l deco-r">
         <div className="container">
           <div className="row align-items-center gy-5 flex-revers-mobile">
             <div className="col-lg-7">

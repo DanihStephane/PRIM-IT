@@ -358,7 +358,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-padding formulaire ">
+      <section className="section-padding formulaire bg-deco top-left-2 mx-90 ">
         <div className="container p-0 ">
          <AnimatedSection animation="fadeInUp">
             <h2 className="fw-bold text-theme-primary text-center">{t('home.startJourney')}</h2>

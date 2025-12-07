@@ -7,8 +7,9 @@
         display: flex;
         position: relative;
         z-index: 2;
-        background-color: #fff;
+        background-color: #ffffffa2;
         padding: 40px;
+        border-radius: 20px;
         @media (max-width:768px) {
             flex-direction: column;
         }
