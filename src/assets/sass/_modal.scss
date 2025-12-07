@@ -1,0 +1,88 @@
+/* Modal styles overrides and helpers */
+.modal {
+ font-family: "Jost", sans-serif;
+  font-family: 400;
+  .modal-dialog {
+    max-width: 1120px;
+    margin: 1.75rem auto;
+    width: 100%;
+  }
+
+  .modal-content {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(2,6,23,0.2);
+     font-family: "Jost", sans-serif;
+         line-height: 123%;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    
+  }
+  .modal-title {
+      font-weight: 600;
+      color: #414141;
+      font-size: 40px;
+      font-family: "Jost", sans-serif;
+          line-height: 123%;
+              margin-bottom: 15px;
+    }
+
+  .modal-body {
+    padding: 2rem;
+    background: #fff;
+    p{
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 150%;
+    }
+  }
+
+  .modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.04);
+    background: #fff;
+  }
+
+  .btn-fermer {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    display: flex;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1040;
+}
+.newsletter-sub{
+  margin: auto;
+  content: "";
+  display: flex;
+  max-width: 470px;
+  .btn-brand {
+      white-space: nowrap;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .form-control {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      background-color: #F4F3F3;
+      border: 0;
+  }
+}

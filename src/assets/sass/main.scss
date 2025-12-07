@@ -13,6 +13,8 @@
 @use './client' as client;
 @use './admin' as admin;
 @use './feedback' as feedback;
+@use './modal' as modal;
+@use './chrono' as chrono;
 
 $brand-primary: #0095e6;
 $brand-secondary: #bcc2f3;

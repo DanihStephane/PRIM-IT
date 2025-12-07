@@ -2764,6 +2764,67 @@ footer .text-theme-secondary p {
   text-decoration: underline;
 }
 
+/* Modal styles overrides and helpers */
+.modal .modal-dialog {
+  max-width: 540px;
+  margin: 1.75rem auto;
+}
+.modal .modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(2, 6, 23, 0.2);
+}
+.modal .modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.modal .modal-header .modal-title {
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+.modal .modal-body {
+  padding: 2rem;
+  background: #fff;
+}
+.modal .modal-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  background: #fff;
+}
+.modal .btn-close {
+  border: none;
+  background: transparent;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1040;
+}
+
+/* Chrono display styles */
+.chrono {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+}
+
+.chrono-part {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  min-width: 2.2rem;
+  text-align: center;
+}
+
+.chrono-sep {
+  color: var(--color-text-secondary);
+}
+
 :root {
   --color-primary:#00C3FF;
   --color-secondary: #bcc2f3;
