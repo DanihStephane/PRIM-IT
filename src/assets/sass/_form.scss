@@ -7,6 +7,9 @@
         display: flex;
         position: relative;
         z-index: 2;
+        background-color: #ffffffa2;
+        padding: 40px;
+        border-radius: 20px;
         @media (max-width:768px) {
             flex-direction: column;
         }
@@ -23,23 +26,49 @@
             }
         }
         .form{
-            width: 40%;
-            display: flex;
-            align-items: center;
-             @media (max-width:768px) {
-                width: 100%;
-            }
             .contact-form{
                 padding: 0;
                 background-color: unset;
                 box-shadow: none;
+                textarea.form-control{
+                    background-color: #EEEEEE !important;
+                    border-radius: 20px !important;
+                    border: 0 !important;
+                    min-height: 280px;
+                }
+            }
+            .btn-add{
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #F2F2F2;
+                border: none;
+                position: absolute;
+                bottom: 40px;
+                left: 60px;
+                .ico{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
     .form-control{
         border: none!important;
-            border-radius: 8px !important;
+        border-radius: 8px !important;
+            margin-bottom: 20px;
+        border-bottom: 1px solid #8D8D8D !important;
+        border-radius: 0 !important;
+
+
+
     }
+    
 }
 .border-content{
     border: 2px #fff solid;

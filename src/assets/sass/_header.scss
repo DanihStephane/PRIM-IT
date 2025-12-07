@@ -5,9 +5,6 @@
     border-radius: 10px;
     padding: 16px !important;
     margin-top: 1rem;
-    img{
-        max-width:300px;
-    }
 }
 .navbar-brand{
     outline: none;
@@ -50,6 +47,13 @@
     left: 0 !important;
     right: auto !important;
     transform-origin: top left !important;
+}
+nav{
+    .dropdown{
+        .btn{
+            color: #000;
+        }
+    }
 }
 
 @media (min-width: 992px) {
