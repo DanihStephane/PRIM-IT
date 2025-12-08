@@ -212,6 +212,24 @@ const Login: React.FC = () => {
               ← Retour au site principal
             </Link>
           </div>
+
+          {/* Bouton Admin - Discret */}
+          <div className="text-center mt-4">
+            <Link
+              to="/admin/login"
+              className="text-decoration-none"
+              style={{
+                fontSize: '0.75rem',
+                color: '#999',
+                opacity: 0.5,
+                transition: 'opacity 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
+              onMouseLeave={(e) => e.currentTarget.style.opacity = '0.5'}
+            >
+              Accès administrateur
+            </Link>
+          </div>
         </div>
       </div>
     </div>
