@@ -1,8 +1,24 @@
-
+import React, { useState } from 'react';
 import Logo from '../assets/images/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setMessage('Veuillez entrer une adresse email valide');
+      return;
+    }
+
+    // Rediriger vers la page d'inscription avec l'email
+    navigate('/client/register', { state: { email } });
+  };
+
   return (
     <footer className='pb-4'>
       <div className="container">
@@ -24,10 +40,28 @@ const Footer: React.FC = () => {
           </div>
           <div className="col-md-auto m-0 newsletter">
             <div className="content">
-              <span>S’abonner et s’inscrire</span>
-              <div className="d-flex gap-2 align-items-center">
-                <button type="submit" className="btn-dark">S’abonner</button>
-              </div>
+              <form onSubmit={handleSubscribe} className="d-flex gap-2 align-items-center position-relative">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="S'abonner et s'inscrire"
+                  className="form-control"
+                  style={{ background: 'transparent' }}
+                  required
+                />
+                <button
+                  type="submit"
+                  className="btn-dark"
+                >
+                  S'abonner
+                </button>
+                {message && (
+                  <small className="text-danger position-absolute" style={{ bottom: '-20px', left: '0' }}>
+                    {message}
+                  </small>
+                )}
+              </form>
             </div>
           </div>
         </div>

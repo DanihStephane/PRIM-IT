@@ -68,6 +68,43 @@
         justify-content: center;
         border-radius: 100%;
         padding: 10px;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+        // Pseudo-élément pour l'image diamant
+        &::before{
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
+            transform: scale(0.8) translateY(10px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            z-index: -1;
+            @media (max-width:768px) {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        // Image spécifique pour chaque item
+        &.item-1::before{
+            background-image: url(../images/bleu-hover.png);
+        }
+
+        &.item-2::before{
+            background-image: url(../images/violet-hover.png);
+        }
+
+        &.item-3::before{
+            background-image: url(../images/rouge-hover.png);
+        }
+
         .animated-section{
             border-radius: 100%;
             text-align: center;
@@ -78,6 +115,30 @@
             justify-content: center;
             flex-direction: column;
             gap: 6px;
+            transition: gap 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+            .ico svg{
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                           filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            // Limiter la largeur du texte de description
+            p {
+                max-width: 250px;
+                margin: 0 auto;
+                line-height: 1.5;
+                transition: margin-top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+                @media (max-width: 768px) {
+                    max-width: 200px;
+                }
+            }
+
+            h3 {
+                max-width: 280px;
+                margin-left: auto;
+                margin-right: auto;
+                transition: margin-top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            }
         }
         .h6{
             font-size: 16px;
@@ -122,10 +183,11 @@
 .content-ourProcess{
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     flex-direction: column;
     gap: 35px;
+    padding-top: 0;
     @media (max-width:1280px) {
         flex-direction: column;
         .process-step{
@@ -213,11 +275,81 @@
     align-items: center;
     gap: 10px;
     width: 100%;
-     justify-content: center;
-     p{
+    justify-content: center;
+    position: relative;
+    min-height: 500px;
+    padding-top: 0;
+
+    // Par défaut, tous les items sont alignés au centre
+    .item {
+        margin-top: 0;
+        transition: margin-top 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    // Ajuster la position des traits pour qu'ils soient plus haut
+    .transition {
+        align-self: center;
+        margin-top: -60px;
+    }
+
+    // Au hover de la section, disposition en V
+    &:hover {
+        .item:nth-child(1) {
+            margin-top: -120px; // Monte
+        }
+
+        .item:nth-child(3) {
+            margin-top: 200px; // Descend encore plus bas (point bas du V)
+        }
+
+        .item:nth-child(5) {
+            margin-top: -120px; // Monte (même niveau que le 1)
+        }
+
+        // Tous les diamants apparaissent en même temps
+        .item::before {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        // Animation des SVG des chiffres
+        .item .animated-section .ico svg {
+            transform: scale(1.1);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+        }
+
+        // Augmenter l'espacement entre image/titre/description au hover
+        .item .animated-section {
+            // Le gap reste petit pour ne pas espacer le chiffre de l'image
+            h3 {
+                margin-top: 25px; // Espace entre l'image diamant et le titre
+            }
+
+            p {
+                margin-top: 15px; // Espace entre le titre et la description
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+            .item:nth-child(1),
+            .item:nth-child(3),
+            .item:nth-child(5) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    p{
         font-size: 16px;
         font-family: Arial, Helvetica, sans-serif;
-     }
+    }
 }
 .avis{
     .testimonial-card{

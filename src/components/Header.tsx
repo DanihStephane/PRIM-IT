@@ -115,15 +115,14 @@ const Header: React.FC = () => {
                       </li>
                     </ul>
                 </div>
+                </div>
                 <Link
                   to="/client/login"
-                  className="client-area-avatar ms-2 d-none"
+                  className="client-area-avatar"
                   title={language === 'fr' ? 'Espace Client' : 'Client Area'}
                 >
                   <User size={20} />
                 </Link>
-                </div>
-               
               </div>
               
              

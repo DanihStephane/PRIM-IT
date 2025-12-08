@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Lock, LayoutDashboard, FileText } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import FloatingCard from '../components/FloatingCard';
@@ -12,6 +12,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import s1 from '../assets/images/s1.jpg';
 import s2 from '../assets/images/s2.jpg';
 import ModalChrono from '../components/ModalChrono';
+import ImgPresent from '../assets/images/presente.png';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -21,8 +22,17 @@ const Home: React.FC = () => {
     company: '',
     details: ''
   });
-  
+
   const [open, setOpen] = useState(false);
+
+  // Afficher le modal automatiquement après 3 secondes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -188,7 +198,7 @@ const Home: React.FC = () => {
             </div>
             <div className="content-ourProcess">
               <div className="g-4 process-step">
-                <div className="item">
+                <div className="item item-1">
                   <AnimatedSection animation="scaleIn">
                         <span className="ico">
                           <svg width="96" height="185" viewBox="0 0 96 185" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +216,7 @@ const Home: React.FC = () => {
                   </AnimatedSection>
                 </div>
                 <span className="transition color-brand"></span>
-                <div className="item">
+                <div className="item item-2">
                   <AnimatedSection animation="scaleIn" delay={200}>
                         <span className="ico">
                           <svg width="107" height="193" viewBox="0 0 107 193" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -228,7 +238,7 @@ const Home: React.FC = () => {
                   </AnimatedSection>
                 </div>
                 <span className="transition color-secondary"></span>
-                <div className="item">
+                <div className="item item-3">
                   <AnimatedSection animation="scaleIn" delay={350}>
                       <span className="ico">
                         <svg width="114" height="197" viewBox="0 0 114 197" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -443,6 +453,16 @@ const Home: React.FC = () => {
          
         </div>
       </section>
+
+      {/* Bouton flottant cadeau */}
+      <button
+        onClick={() => setOpen(true)}
+        className="floating-gift-button"
+        aria-label="Ouvrir le cadeau"
+        title="Recevez votre guide gratuit !"
+      >
+        <img src={ImgPresent} alt="Cadeau" />
+      </button>
     </div>
   );
 };

@@ -79,3 +79,62 @@ h2{
             font-size: 40px;
         }
 }
+
+// Bouton flottant cadeau
+.floating-gift-button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  border: 3px solid #3BBBED;
+  box-shadow: 0 8px 24px rgba(59, 187, 237, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 999;
+
+  img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    animation: bounce 2s infinite;
+  }
+
+  &:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 32px rgba(59, 187, 237, 0.5);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 20px;
+
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
